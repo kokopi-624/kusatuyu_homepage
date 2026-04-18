@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>草津湯　ホームページ　アクセス</title>
+    <meta name="description" content="東京都大田区にある銭湯。草津湯のホームページ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min/css">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Favicon-removebg-preview.png">
+
+</head>
+
+<header>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="top.html">TOP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ohuro.html">お風呂</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ryoukin.html">料金</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tensyukarahitokoto.html">店長から一言</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="akusesu.html">アクセス</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <div class="top-img">
+        <img class="top-img" src="img/noren.jpeg" alt="料金写真">
+        <h1 class="top-text" class="fade-img">
+            料 金
+        </h1>
+    </div>
+
+
+
+    <div class="googlemap" class="fade-img">
+        <div class="ryoukin-text">
+            <h1>
+                料金
+            </h1>
+            <p>
+            <h2>入浴料</h2>
+            大人1名：550円<br>
+            大人2名：1100円<br>
+            小学生1名：200円<br><br>
+
+            <h2>タオル</h2>
+            いきいき入浴シール：200円<br>
+            販売タオル：300円<br>
+            ナイロンタオル：450円<br><br>
+
+            <h2>レンタルセットなど</h2>
+            大人1名+タオルセット：650円<br>
+            各レンタルタオル：50円<br>
+            石鹸ほか100円券：100円<br>
+            歯ブラシ他50円券：50円<br><br>
+
+            <h2>お酒</h2>
+            大瓶・生ビール中：550円<br>
+            生ビール小：300円<br>
+            缶ビール：330円<br>
+            生サワー（梅・レモン）：350円<br><br>
+
+            <h2>ソフトドリンク</h2>
+            缶ジュース：130円<br>
+            水：130円<br>
+            オロナミンC：130円<br><br>
+
+            <h2>牛乳・パック・お菓子</h2>
+            牛乳：150円<br>
+            紙パックジュース：150円<br>
+            お菓子：110円<br><br>
+            ※2026年4月2日時点での料金
+            </p>
+        </div>
+
+
+        <img class="ryoukin-img" src="img/ryoukin.jpeg" alt="料金写真">
+
+
+    </div>
+
+
+
+
+
+    <script>
+        const items = document.querySelectorAll('.fade-img');
+
+        items.forEach(function (target) {
+
+
+            window.addEventListener('scroll', () => {
+                if (!target) return;
+
+
+                console.log(target);
+
+                const top = target.getBoundingClientRect().top;
+
+                if (top < window.innerHeight - 100) {
+                    target.classList.add('show');
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+
+<footer>
+    <p class="footer-text">
+        ©矢口小学校　太田の未来づくり活動
+    </p>
+</footer>

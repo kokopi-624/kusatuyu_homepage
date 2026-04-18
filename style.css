@@ -1,0 +1,248 @@
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item {
+    margin-left: 70px;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    justify-content: center;
+    text-align: right;
+}
+
+.top-img {
+    width: 1497px;
+    height: auto;
+    animation: fadeIn 2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+
+.top-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* 文字色 */
+    font-size: 6em;
+    /* 文字サイズ */
+    font-weight: bold;
+    /* 太字 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* 読みやすく影を追加 */
+    white-space: nowrap;
+    /* 改行防止 */
+    font-family: 'HG正楷書体-PRO', 'HGP行書体', serif;
+    text-shadow: 2px 2px 4px rgb(48, 86, 67);
+}
+
+
+.top-item {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* トップの上のやつ */
+
+.one-item {
+    margin-top: 25px;
+}
+
+.one-item-img {
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+    padding-left: 200px;
+}
+
+.one-item-text {
+    position: relative;
+    padding-left: 810px;
+    top: -470px;
+    padding-right: 200px;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+
+
+
+
+/* トップの下のやつ */
+
+.one-item-right-img {
+    width: 600px;
+    height: auto;
+    float: right;
+    padding-right: 200px;
+}
+
+.one-item-right {
+    text-align: right;
+}
+
+
+
+.one-item-right-text {
+    text-align: left;
+    padding-left: 200px;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.ugoke-text {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* お風呂の上のやつ */
+
+.one-item-ohuro {
+    margin-top: 500px;
+
+}
+
+.one-item-ohuro-img {
+    width: 500px;
+    height: auto;
+    text-align: left;
+    margin-top: 100px;
+    padding-left: 200px;
+}
+
+.one-item-ohuro-text {
+    position: relative;
+    padding-left: 810px;
+    top: -380px;
+    text-align: left;
+    padding-right: 200px;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
+/* お風呂の下のやつ */
+
+.one-item-right-ohuro-img {
+    width: 600px;
+    height: auto;
+    float: right;
+    padding-right: 200px;
+}
+
+.one-item-right-ohuro {
+    text-align: right;
+}
+
+
+
+.one-item-right-ohuro-text {
+    text-align: left;
+    padding-left: 200px;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.ohuro-text {
+    margin-top: 20px;
+}
+
+
+/* ここから下はアクセスページのCSS */
+
+.googlemap {
+    margin-left: 80px;
+    margin-top: 100px;
+
+}
+
+.googlemap-text {
+    margin-left: 650px;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* ここから下は料金ページのCSS */
+
+.ryoukin-img {
+    width: auto;
+    height: 1000px;
+}
+
+.ryoukin-text {
+    margin-left: 800px;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(105, 49, 22);
+    color: aliceblue;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 450px;
+    font-size: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
+.fade-img {
+    width: 600px;
+    height: auto;
+    display: block;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease;
+}
+
+.fade-img.show {
+    opacity: 1;
+    transform: translateY(0);
+}

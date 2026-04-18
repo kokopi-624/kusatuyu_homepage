@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>草津湯　ホームページ</title>
+    <meta name="description" content="東京都大田区にある銭湯。草津湯のホームページ">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min/css">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Favicon-removebg-preview.png">
+
+</head>
+
+<header>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="top.html">TOP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ohuro.html">お風呂</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ryoukin.html">料金</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tensyukarahitokoto.html">店長から一言</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="akusesu.html">アクセス</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <div class="top-img">
+        <img class="top-img" src="img/gaikan.jpeg" alt="草津湯">
+        <h1 class="top-text" class="fade-img">
+            草 津 湯
+        </h1>
+    </div>
+
+
+
+
+    <div class="one-item">
+        <div class="one-item-img">
+            <img id="one-item-img" class="fade-img" src="img/naisou.jpeg">
+        </div>
+        <div class="one-item-text">
+            <p>
+                創業75年、町とともに歩んできた草津湯。
+                どこか懐かしく、ほっと落ち着ける空間の中で、お年寄りから赤ちゃんまで、誰もが安心してくつろげる時間を大切にしています。
+                あたたかいお湯に身をゆだねながら、日々の疲れをゆっくりと癒すひととき。
+                世代を超えて人が集まり、自然と会話が生まれる、そんなやさしい場所であり続けます。
+            </p>
+        </div>
+    </div>
+
+
+    <div class="one-item-right">
+        <div class="one-item-right-img">
+            <img id="one-item-right-img" class="fade-img" src="img/tensyu.jpeg">
+        </div>
+
+
+        <div class="one-item-right-text">
+            <p class="ugoke-text">
+                地域に根ざした、みなさまに親しまれる銭湯を目指して。
+                草津湯はこれからも、地元の方々にとって気軽に立ち寄れ、ほっとできる場所であり続けたいと考えています。
+                お子さまからお年寄りまで、誰もが安心して過ごせる空間づくりを大切にしながら、これからも歩んでまいります。
+                今後ともどうぞよろしくお願いいたします。
+            </p>
+        </div>
+
+
+    </div>
+
+    <script>
+        const items = document.querySelectorAll('.fade-img');
+
+        items.forEach(function (target) {
+
+
+            window.addEventListener('scroll', () => {
+                if (!target) return;
+
+
+                console.log(target);
+
+                const top = target.getBoundingClientRect().top;
+
+                if (top < window.innerHeight - 100) {
+                    target.classList.add('show');
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+
+<footer>
+    <p class="footer-text">
+        ©矢口小学校　太田の未来づくり活動
+    </p>
+</footer>
