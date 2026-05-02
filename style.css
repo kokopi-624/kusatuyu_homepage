@@ -6,6 +6,9 @@
     /* 要素の間の余白 */
     list-style: none;
     padding: 0;
+    background-color: rgb(105, 49, 22);
+    color: aliceblue;
+
 }
 
 .top-item {
@@ -30,7 +33,15 @@
     font-weight: bold;
     letter-spacing: 0.1em;
 
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    letter-spacing: 0.15em;
+    text-shadow:
+        0 2px 5px rgba(30, 83, 45, 0.5),
+        /* くっきり影 */
+        0 0 15px rgba(0, 0, 0, 0.4),
+        /* ぼかし */
+        0 0 25px rgba(255, 255, 255, 0.2);
+    /* ほんのり光 */
 }
 
 
