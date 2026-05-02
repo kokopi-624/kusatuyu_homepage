@@ -1,47 +1,39 @@
 .navbar-nav {
-    text-align: center;
-}
-
-.nav-item {
-    margin-left: 70px;
-}
-
-.navbar-nav li {
-    display: inline-block;
+    display: flex;
     justify-content: center;
-    text-align: right;
+    /* 真ん中にする */
+    gap: 30px;
+    /* 要素の間の余白 */
+    list-style: none;
+    padding: 0;
+}
+
+.top-item {
+    position: relative;
 }
 
 .top-img {
-    width: 1497px;
-    height: auto;
-    animation: fadeIn 2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    width: 100%;
+    display: block;
 }
-
 
 .top-text {
     position: absolute;
-    top: 50%;
+    top: 30%;
+    /* ←ちょい下に調整 */
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+
     color: white;
-    /* 文字色 */
-    font-size: 6em;
-    /* 文字サイズ */
+    font-size: 6vw;
     font-weight: bold;
-    /* 太字 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    /* 読みやすく影を追加 */
-    white-space: nowrap;
-    /* 改行防止 */
-    font-family: 'HG正楷書体-PRO', 'HGP行書体', serif;
-    text-shadow: 2px 2px 4px rgb(48, 86, 67);
+    letter-spacing: 0.1em;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 
-.top-item {
-    display: flex;
-}
 
 @keyframes fadeIn {
     0% {
@@ -54,7 +46,6 @@
 }
 
 /* トップの上のやつ */
-
 .one-item {
     margin-top: 25px;
 }
@@ -76,19 +67,14 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-
 }
 
-
-
-
-
 /* トップの下のやつ */
-
 .one-item-right-img {
     width: 600px;
     height: auto;
     float: right;
+    text-align: left;
     padding-right: 200px;
 }
 
@@ -96,11 +82,10 @@
     text-align: right;
 }
 
-
-
 .one-item-right-text {
     text-align: left;
     padding-left: 200px;
+    padding-right: 810px;
     font-size: 20px;
     font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
@@ -112,15 +97,9 @@
     margin-top: 20px;
 }
 
-
-
-
-
 /* お風呂の上のやつ */
-
 .one-item-ohuro {
     margin-top: 500px;
-
 }
 
 .one-item-ohuro-img {
@@ -144,10 +123,7 @@
     font-style: normal;
 }
 
-
-
 /* お風呂の下のやつ */
-
 .one-item-right-ohuro-img {
     width: 600px;
     height: auto;
@@ -158,8 +134,6 @@
 .one-item-right-ohuro {
     text-align: right;
 }
-
-
 
 .one-item-right-ohuro-text {
     text-align: left;
@@ -175,13 +149,10 @@
     margin-top: 20px;
 }
 
-
 /* ここから下はアクセスページのCSS */
-
 .googlemap {
     margin-left: 80px;
     margin-top: 100px;
-
 }
 
 .googlemap-text {
@@ -195,7 +166,6 @@
 }
 
 /* ここから下は料金ページのCSS */
-
 .ryoukin-img {
     width: auto;
     height: 1000px;
@@ -211,12 +181,6 @@
     font-style: normal;
 }
 
-
-
-
-
-
-
 footer {
     background-color: rgb(105, 49, 22);
     color: aliceblue;
@@ -230,13 +194,10 @@ footer {
     font-style: normal;
 }
 
-
-
 .fade-img {
     width: 600px;
     height: auto;
     display: block;
-
     opacity: 0;
     transform: translateY(50px);
     transition: all 2s ease;
@@ -245,4 +206,94 @@ footer {
 .fade-img.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+
+    /* ナビ */
+    .nav-item {
+        margin-left: 0;
+        margin: 10px 0;
+    }
+
+    .navbar-nav li {
+        display: block;
+        text-align: center;
+    }
+
+    /* トップ画像 */
+    .top-img {
+        width: 100%;
+    }
+
+    .top-text {
+        font-size: 2em;
+        white-space: normal;
+    }
+
+    .top-item {
+        display: block;
+    }
+
+    /* 共通：画像 */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 左右レイアウト全部リセット */
+    .one-item-img,
+    .one-item-right-img,
+    .one-item-ohuro-img,
+    .one-item-right-ohuro-img {
+        width: 100%;
+        padding: 0;
+        margin: 20px 0;
+        float: none;
+    }
+
+    /* テキスト全部リセット */
+    .one-item-text,
+    .one-item-right-text,
+    .one-item-ohuro-text,
+    .one-item-right-ohuro-text {
+        position: static;
+        padding: 20px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    /* 変な余白消す */
+    .one-item,
+    .one-item-ohuro {
+        margin-top: 50px;
+    }
+
+    /* マップ */
+    .googlemap {
+        margin: 20px;
+    }
+
+    .googlemap-text {
+        position: static;
+        margin: 20px;
+    }
+
+    /* 料金 */
+    .ryoukin-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .ryoukin-text {
+        position: static;
+        margin: 20px;
+    }
+
+    /* フッター */
+    footer {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
 }
