@@ -36,9 +36,9 @@
     font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
     letter-spacing: 0.15em;
     text-shadow:
-        0 2px 5px rgba(30, 83, 45, 0.5),
+        0 2px 5px rgba(43, 140, 70, 0.5),
         /* くっきり影 */
-        0 0 15px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(3, 89, 26, 0.4),
         /* ぼかし */
         0 0 25px rgba(255, 255, 255, 0.2);
     /* ほんのり光 */
