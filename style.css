@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     /* 真ん中にする */
-    gap: 30px;
+    gap: 20px;
     /* 要素の間の余白 */
     list-style: none;
     padding: 0;
